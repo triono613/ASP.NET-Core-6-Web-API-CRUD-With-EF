@@ -1,0 +1,4 @@
+- add db with name EF_CRUD
+- create file model for generate table using "nuGet package console"
+- in nuGet console type " Add-Migration createContact " and then type Update-Database
+- 
