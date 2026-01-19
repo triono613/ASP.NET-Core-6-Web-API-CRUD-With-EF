@@ -1,0 +1,52 @@
+# Gitignore for common files across various environments
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+[Dd]ebug/
+[Rr]elease/
+bin/
+obj/
+build/
+*.exe
+*.dll
+*.suo
+*.user
+*.config
+*.cache
+*.lib
+*.ncb
+*.aps
+*.manifest
+*.res
+
+# Temporary files
+*~
+*.bak
+*.tmp
+temp/
+
+# Log files
+*.log
+log/
+logs/
+
+# Node.js
+node_modules/
+/package-lock.json
+/yarn.lock
+
+# Python
+__pycache__/
+.pytest_cache/
+venv/
+*.pyc
+
+# IDE specific files (e.g. VS Code, JetBrains)
+.vscode/
+.idea/
+
+# Environment variables
+.env

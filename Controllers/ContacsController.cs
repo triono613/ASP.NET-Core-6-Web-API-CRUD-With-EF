@@ -17,6 +17,22 @@ namespace WebApplication1.Controllers
         {
             return Ok(await _connContext.Contacs.ToListAsync());
         }
+        [HttpPost]
+        public async Task<IActionResult> AddContact(Contacs addContactRequest)
+        {
+            var contact = new Contacs
+            {
+                id = Guid.NewGuid(),
+                name = addContactRequest.name,
+                address = addContactRequest.address,
+                email = addContactRequest.email,
+                phone = addContactRequest.phone,
+            };
+            await _connContext.Contacs.AddAsync(contact);
+            await _connContext.SaveChangesAsync();
+            return Ok(contact); 
+            // ok
+        }
 
     }
 }
